@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaysville Clinic</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Inter, Arial, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            min-height: 100%;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: linear-gradient(180deg, #f7f9fc 0%, #e8edf4 100%);
+        }
+        .container {
+            width: 100%;
+            max-width: 520px;
+            padding: 36px 32px;
+            border-radius: 24px;
+            background: #ffffff;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+            text-align: center;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+        }
+        h1 {
+            margin: 0 0 12px;
+            font-size: 2.4rem;
+            letter-spacing: -0.03em;
+            color: #111827;
+        }
+        .subtitle {
+            margin: 0 0 24px;
+            color: #4b5563;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0 auto 28px;
+            list-style: none;
+        }
+        .socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.96rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .socials a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+        }
+        .socials a.facebook { background: #1877f2; }
+        .socials a.instagram { background: #dd2a7b; }
+        .contact-info {
+            text-align: left;
+            display: grid;
+            gap: 12px;
+            margin: 0 auto;
+            max-width: 360px;
+            color: #374151;
+            font-size: 0.98rem;
+            line-height: 1.75;
+        }
+        .contact-info p {
+            margin: 0;
+        }
+        .contact-info strong {
+            color: #111827;
+        }
+        .contact-info a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kaysville Clinic</h1>
+        <p class="subtitle">We’re updating our website to provide a better experience for patients and visitors. Until then, you can reach us through our social channels or direct contact information below.</p>
+        <ul class="socials">
+            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=61580973813844" target="_blank" rel="noreferrer">Facebook</a></li>
+            <li><a class="instagram" href="https://www.instagram.com/kaysvilleclinic/" target="_blank" rel="noreferrer">Instagram</a></li>
+        </ul>
+        <div class="contact-info">
+            <p><strong>Email</strong><br><a href="mailto:120kaysvilleclinic@gmail.com">120kaysvilleclinic@gmail.com</a></p>
+            <p><strong>Phone</strong><br><a href="tel:+18015444227">(801) 544-4227</a></p>
+            <p>Copy the email address above to email us directly, or tap the phone number to call.</p>
+        </div>
+    </div>
+</body>
+</html>
