@@ -187,52 +187,76 @@ main {
     box-shadow: var(--shadow);
 }
 
+/* ============================
+   HERO PANEL
+============================ */
+
 .hero-panel {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(139, 92, 246, 0.7));
     padding: 120px 32px;
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
+
+    /* Your existing gradient stays */
+    background: linear-gradient(
+        135deg,
+        rgba(37, 99, 235, 0.8),
+        rgba(139, 92, 246, 0.7)
+    );
 }
 
-.hero-video {
+/* ============================
+   HERO BACKGROUND IMAGE
+============================ */
+
+.hero-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;      /* fills the hero area */
+    object-position: center; /* keeps building centered */
     z-index: 1;
 }
 
+/* ============================
+   OVERLAY
+============================ */
+
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(22, 22, 22, 0.041);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
     z-index: 2;
 }
 
+/* ============================
+   HERO CONTENT
+============================ */
+
 .hero-content {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    z-index: 3;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    z-index: 3;
 }
 
 .hero-text-center {
     display: grid;
     gap: 20px;
+    text-align: center;
 }
+
+/* ============================
+   TEXT STYLES
+============================ */
 
 .hero-text-center h1 {
     margin: 0;
@@ -249,69 +273,19 @@ main {
     line-height: 1.7;
 }
 
-.hero-copy {
-    display: grid;
-    gap: 22px;
-}
-
-.hero-image {
-    display: grid;
-    gap: 18px;
-    background: linear-gradient(180deg, rgba(235, 234, 234, 0.95), rgba(248, 251, 255, 0.92));      
-}
+/* ============================
+   LOGO
+============================ */
 
 .clinic-logo {
-    width:  350px;   /* increase this number to make it bigger */
+    width: 350px;
     max-width: 100%;
     height: auto;
 }
 
-
-.hero-copy {
-    display: grid;
-    gap: 22px;
-}
-
-.hero-image {
-    display: grid;
-    gap: 18px;
-    background: linear-gradient(180deg, rgba(235, 234, 234, 0.95), rgba(248, 251, 255, 0.92));
-    border-radius: 24px;
-    padding: 20px;
-    border: 1px solid rgba(96, 165, 250, 0.22);
-}
-
-.eyebrow {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 16px;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-weight: 700;
-    font-size: 0.85rem;
-    width: fit-content;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-}
-
-.hero-copy h1 {
-    margin: 0;
-    font-size: clamp(2.4rem, 4vw, 3.6rem);
-    line-height: 1.05;
-}
-
-.hero-text,
-.section-text,
-.card p,
-.pricing-card p,
-.contact-card p {
-    margin: 0;
-    color: var(--text-muted);
-    line-height: 1.75;
-    font-size: 1rem;
-}
+/* ============================
+   BUTTONS
+============================ */
 
 .hero-actions {
     display: flex;
@@ -320,10 +294,9 @@ main {
     justify-content: center;
 }
 
-/* Hero panel text colors for video background */
-.hero-panel .hero-copy h1 {
-    color: #ffffff;
-}
+/* ============================
+   COLOR OVERRIDES
+============================ */
 
 .hero-panel .hero-text {
     color: rgba(255, 255, 255, 0.95) !important;
@@ -333,6 +306,7 @@ main {
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
 }
+
 
 .button {
     display: inline-flex;
