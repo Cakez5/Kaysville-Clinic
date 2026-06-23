@@ -194,7 +194,7 @@ main {
 .hero-panel {
     position: relative;
     overflow: hidden;
-    padding: 80px 32px;
+    padding: 40px 32px;
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -205,7 +205,7 @@ main {
     background: linear-gradient(
         135deg,
        rgba(178, 178, 179, 0.8),
-        rgba(139, 92, 246, 0.7)
+        rgba(47, 77, 243, 0.7),
     );
 }
 
