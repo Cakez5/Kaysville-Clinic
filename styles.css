@@ -194,7 +194,7 @@ main {
 .hero-panel {
     position: relative;
     overflow: hidden;
-    padding: 120px 32px;
+    padding: 80px 32px;
     min-height: 600px;
     display: flex;
     align-items: center;
