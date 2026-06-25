@@ -72,7 +72,7 @@ body {
     justify-content: space-between;
     gap: 20px;
     padding: 20px 28px;
-    border-radius: 22px;
+    border-radius: 0px;
     background: var(--surface);
     border: 1px solid var(--surface-border);
     box-shadow: var(--shadow);
