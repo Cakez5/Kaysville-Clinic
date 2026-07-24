@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,22 @@
     <title>Kaysville | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1486813309670770');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1486813309670770&ev=PageView&noscript=1"
+/></noscript>
 
 <body>
     <div class="container">
@@ -96,38 +112,64 @@
                 </div>
             </section>
 
+            <section class="panel gallery-panel">
+                <div class="section-header">
+                    <h2>Clinic Gallery</h2>
+                    <p>Take a look at our clinic, team, and the welcoming space where we care for our community.</p>
+                </div>
+
+                <div class="carousel" data-carousel>
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <figure class="carousel-slide">
+                                <img src="assets/images/NewKaysville.jpg" alt="Front view of Kaysville Clinic">
+                            </figure>
+                            <figure class="carousel-slide">
+                                <img src="assets/images/KaysvilleClinic.png" alt="Kaysville Clinic building exterior">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control prev" type="button" aria-label="Previous gallery image">&#10094;</button>
+                    <button class="carousel-control next" type="button" aria-label="Next gallery image">&#10095;</button>
+                    <div class="carousel-dots" aria-hidden="true"></div>
+                </div>
+            </section>
+
             <section class="panel testimonials-panel">
                 <div class="section-header">
                     <h2>Testimonials</h2>
                     <p>Patients trust us for thoughtful care and a welcoming experience.</p>
                 </div>
 
-                <!-- Testimonials Grid -->
+                <div class="carousel testimonials-carousel" data-testimonials-carousel>
+                    <div class="carousel-viewport">
+                        <div class="carousel-track testimonials-track" aria-live="polite">
+                            <article class="carousel-slide testimonial-slide">
+                                <p class="testimonial-empty">Loading real patient testimonials...</p>
+                            </article>
+                        </div>
+                    </div>
 
-                <div class="testimonials-grid">
-                    <article class="testimonial-card">
-                        <p class="testimonial-text"></p>
-                        <div class="testimonial-author">
-                            <strong></strong>
-                            <span></span>
-                        </div>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-text"></p>
-                        <div class="testimonial-author">
-                            <strong></strong>
-                            <span></span>
-                        </div>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-text"></p>
-                        <div class="testimonial-author">
-                            <strong></strong>
-                            <span></span>
-                        </div>
-                    </article>
+                    <button class="carousel-control prev" type="button" aria-label="Previous testimonial">&#10094;</button>
+                    <button class="carousel-control next" type="button" aria-label="Next testimonial">&#10095;</button>
+                    <div class="carousel-dots testimonials-dots" aria-hidden="true"></div>
+                </div>
+
+                <div class="testimonial-actions">
+                    <a class="button secondary" href="https://www.google.com/search?q=KAysville+clinic&rlz=1C1VDKB_enUS1152US1152&oq=KAysville+clinic&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MhAIAhAuGK8BGMcBGIAEGI4FMhAIAxAuGK8BGMcBGIAEGI4FMhAIBBAuGK8BGMcBGIAEGI4FMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg80gEIMzkwMGowajeoAgiwAgHxBdsLnDl8eD7h8QXbC5w5fHg-4Q&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CAwS4AEKBmxjbF9wdhIrCgNwdnESJENnc3ZaeTh4ZEdSbU1YWmtZaUlNQ2daamJHbHVhV01RQWhnRBJqCgNscWkSY0NoQnJZWGx6ZG1sc2JHVWdZMnhwYm1salNJclR3OGJsZ0lDQUNGb1lFQUVZQUJnQkloQnJZWGx6ZG1sc2JHVWdZMnhwYm1samtnRU9iV1ZrYVdOaGJGOXZabVpwWTJYZ0FRQRISCgN0YnMSC2xyZjohM3NJQUU9EhUKAXESEGtheXN2aWxsZSBjbGluaWMaEmxvY2FsLXBsYWNlLXZpZXdlchgKIISt4KYG" target="_blank" rel="noopener">Read More Reviews on Google</a>
                 </div>
             </section>
+
+            <div class="carousel-lightbox" data-carousel-lightbox aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded gallery image">
+                <button class="lightbox-close" type="button" data-carousel-lightbox-close aria-label="Close enlarged image">&times;</button>
+                <button class="lightbox-nav prev" type="button" data-carousel-lightbox-prev aria-label="Show previous image">&#10094;</button>
+                <figure class="lightbox-figure">
+                    <img src="" alt="" data-carousel-lightbox-image>
+                    <figcaption data-carousel-lightbox-caption></figcaption>
+                </figure>
+                <button class="lightbox-nav next" type="button" data-carousel-lightbox-next aria-label="Show next image">&#10095;</button>
+            </div>
 
         </main>
 
@@ -236,10 +278,185 @@
     </div>
 
     <!-- Google Reviews Config -->
+    <!-- Set reviewsEndpoint to your hosted API for safer key handling on GitHub Pages. -->
     <script>
         window.GOOGLE_REVIEWS_CONFIG = {
+            // Modes: "manual" (use manualTestimonials), "google" (live Google only), "hybrid" (manual first, then Google).
+            testimonialsMode: "manual",
+            // Keep true to show only 5-star testimonials from any source.
+            fiveStarOnly: true,
+            // Number of cards to show.
+            maxTestimonials: 30,
             placeId: "ChIJp2QG7z1eUocR0uKbjDg-p7A",
-            apiKey: "YOUR_GOOGLE_API_KEY_HERE"
+            apiKey: "AIzaSyBavxGv4fvuQ3klLSJN4pCVX99pxkgf4sc",
+            reviewsEndpoint: "",
+            preferSecureEndpoint: true,
+            // Add/remove testimonials manually here.
+            // Example item: { name: "Jane D.", role: "Patient Testimonial", text: "Great care.", rating: 5 }
+            manualTestimonials: [
+                {
+                    name: "Deanna Farley",
+                    role: "Google Review",
+                    text: "Dr. Kamalu has really helped me get my hormones back on track after suffering with menopausal symptoms for a number of years. He listened to my concerns and answered my questions, educating me on how to best manage and eradicate my symptoms. I no longer have to suffer and have a healthy plan moving forward. I highly recommend his services.",
+                    rating: 5
+                },
+                {
+                    name: "Maile Roberts",
+                    role: "Google Review",
+                    text: "Not only is Dr. Kamalu well respected as a family physician with extensive experience in emergency care, but he is also able to counsel and monitor patients who seek hormone replacement and peptide therapy.",
+                    rating: 5
+                },
+                {
+                    name: "Lonn Phillips Sullivan",
+                    role: "Google Review",
+                    text: "Dr Kamalu is the best! I still see him even tho I've moved to Salt Lake. Seen him for over a decade!!!",
+                    rating: 5
+                },
+                {
+                    name: "Tyrone Lamb",
+                    role: "Google Review",
+                    text: "Best doctors on the planet! The staff is ok.... Just kidding they make you feel like family. Would never go see anyone else,",
+                    rating: 5
+                },
+                {
+                    name: "Shane Fitzpatrick",
+                    role: "Google Review",
+                    text: "I love kaysville clinic! The staff is amazing and Cara is the absolute best! Highly recommend",
+                    rating: 5
+                },
+                {
+                    name: "Bryan Murphy",
+                    role: "Google Review",
+                    text: "Dr Kamalu is very thorough and I now come to him for hormone therapy as well.",
+                    rating: 5
+                },
+                {
+                    name: "Erin Lindbloom Christensen",
+                    role: "Google Review",
+                    text: "Absolutely love Kaysville clinic. It's the kind of place that treats you like family. Dr. Kamalu and his staff are the best. Dr. Kamalu takes a real interest in his patients and takes the time to listen. He is also very thorough. I am alive.",
+                    rating: 5
+                },
+                {
+                    name: "Joanna Arbogast",
+                    role: "Google Review",
+                    text: "Dr Kamalu saved my life. He is the most caring and thorough physicians I have ever met. I was finally able to open up, be comfortable and get help. He takes his time, knows what he is doing and is non judgmental.",
+                    rating: 5
+                },
+                {
+                    name: "James swider",
+                    role: "Google Review",
+                    text: "Dr. Kamalu is awesome to work with. I love the whole staff.",
+                    rating: 5
+                },
+                {
+                    name: "SaraLee B.",
+                    role: "Google Review",
+                    text: "I've been seeing Dr Kamalu and his staff since 2015, He and most of his staff are fantastic. Every business has a rare missed step (what happens with Humans right, as no one can be perfect 100% of the time), especially in the healthcare field.",
+                    rating: 5
+                },
+                {
+                    name: "Terina Parsons",
+                    role: "Google Review",
+                    text: "A Dr that really cares and takes the time to listen to your concerns. His staff is just as great and devoted to to helping you when you are in need. I has problems with my insurance as well but I was super patient bc he is worth seeing.",
+                    rating: 5
+                },
+                {
+                    name: "Renee Piula",
+                    role: "Google Review",
+                    text: "Dr. Kamalu has been my doctor for 16 years. I trust him completely........he is not only intelligent but is willing to immediately refer me to specialists when required. He is very down to earth and practical and willing to work with me on my health issues.",
+                    rating: 5
+                },
+                {
+                    name: "Rob Darger",
+                    role: "Google Review",
+                    text: "I've been seeing Dr Kamalu for around 10 years now. I can safely say if it wasn't for him I don't know where i'd be today. Through his care I have been able to go from rock bottom with nothing to offer anyone, to where I am today.",
+                    rating: 5
+                },
+                {
+                    name: "Andrew Glasmacher",
+                    role: "Google Review",
+                    text: "We love Dr. Kamalu and his staff! We've been seeing him since moving here in 2006, and he's become like family to us. He always takes time to find out how we are doing and chat for a few minutes. We never feel like we are being shuttled in and out.",
+                    rating: 5
+                },
+                {
+                    name: "Brenda Mattucci",
+                    role: "Google Review",
+                    text: "Dr kamala is a godsend in my life. He I'd a kind and very caring Doctor. I've seen him for years and he is a great Doctor. I would highly recommend him to anyone. I don't know where I would be without his help and expertise.",
+                    rating: 5
+                },
+                {
+                    name: "Jason Paulk",
+                    role: "Google Review",
+                    text: "Dr. Kamalu helped me with every tool he had. Mentally and physically the best family physician doctor I have ever worked with and would highly recommend him to anyone with any illness. And I would just like to thank him for changing my life.",
+                    rating: 5
+                },
+                {
+                    name: "Alan Sanders",
+                    role: "Google Review",
+                    text: "Had an immediate need for an appointment. The Clinic staff was extremely friendly and helpful. They fit me in. Dr. Kamalu was professional, and courteous, listened, and treated me. Very happy with them.",
+                    rating: 5
+                },
+                {
+                    name: "Jacob Glauser",
+                    role: "Google Review",
+                    text: "Staff at kaysville clinic are so awesome. Been a patient of Dr kamalu for 5 years. They definitely go above and beyond. I highly recommend Dr Kamalu at Kaysville clinic.",
+                    rating: 5
+                },
+                {
+                    name: "FLYorNOway",
+                    role: "Google Review",
+                    text: "Professional staff. LOve their response to my problems. I appreciate their follow through",
+                    rating: 5
+                },
+                {
+                    name: "Craig Carlyle",
+                    role: "Google Review",
+                    text: "I have seen the good doctor for a number of years, has been very good to my wife and I, he is very knowledgeable, and a really great person. Very thorough, and caring, takes time to understand your situation. Great staff.",
+                    rating: 5
+                },
+                {
+                    name: "Joel Kennington",
+                    role: "Google Review",
+                    text: "I had a great experience with the Doctors and staff at Kaysville clinic. So nice and professional I would recommend them to anyone.",
+                    rating: 5
+                },
+                {
+                    name: "Brian Vasquez",
+                    role: "Google Review",
+                    text: "Just the best doctor I have ever had. Everyone there is very kind and respectful. They treat you like family.",
+                    rating: 5
+                },
+                {
+                    name: "john fishburn",
+                    role: "Google Review",
+                    text: "I love all of the staff at this clinic, very friendly and caring. The staff make you feel comfortable and you can be yourself.",
+                    rating: 5
+                },
+                {
+                    name: "BOB DARK",
+                    role: "Google Review",
+                    text: "I've been a Physical Therapist for 37 years, and I know how important it is for a man to maintain his heath and stay active as we grow older. I work with doctors everyday, Dr. Kamala is the only MD I trust with my health.",
+                    rating: 5
+                },
+                {
+                    name: "Glen Smith",
+                    role: "Google Review",
+                    text: "Dr. Kamalu and his entire staff have been great! I have been going to this establishment for several years and I would recommend the office for anyone.",
+                    rating: 5
+                },
+                {
+                    name: "Seth Stewart",
+                    role: "Google Review",
+                    text: "Doctor Kamalu has been treating me for years. He genuinely cares and remembers his patients I appreciate that he takes the time to get to know me and treats me with care and doesn't try to push unnecessary medicine.",
+                    rating: 5
+                },
+                {
+                    name: "Kelly Becraft",
+                    role: "Google Review",
+                    text: "Kaysville Clinic is by far the best clinic i have ever been to. The staff is wonderful and always very friendly and helpful. I have been in a few bad spots and Dr Kamalu has always helped me out. He is by far the best! Would recommend 100%!!!",
+                    rating: 5
+                }
+            ]
         };
     </script>
 
