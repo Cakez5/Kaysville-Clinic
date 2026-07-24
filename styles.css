@@ -83,8 +83,12 @@ p, li, a, button, input, textarea, select {
 }
 
 .brand img {
-    height: 180px;
+    display: block;
     width: auto;
+    height: clamp(44px, 7vw, 92px);
+    max-width: min(280px, 34vw);
+    object-fit: contain;
+    flex: 0 0 auto;
 }
 
 .brand-text {
@@ -647,16 +651,21 @@ footer.site-footer {
 
 @media (max-width: 560px) {
     .site-header {
+        position: relative;
+        flex-direction: column;
+        align-items: stretch;
         padding: 12px 14px;
         gap: 10px;
     }
 
     .brand {
+        max-width: calc(100% - 62px);
         gap: 8px;
     }
 
     .brand img {
-        height: 40px;
+        height: clamp(68px, 26vw, 112px);
+        max-width: min(360px, 76vw);
     }
 
     .brand-text span {
@@ -665,8 +674,15 @@ footer.site-footer {
     }
 
     .nav-toggle {
+        position: absolute;
+        top: 12px;
+        right: 14px;
         width: 42px;
         height: 42px;
+    }
+
+    .nav-links {
+        flex: 0 0 100%;
     }
 }
 
