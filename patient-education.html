@@ -36,13 +36,842 @@
         </header>
 
         <main>
-            <section class="panel">
-                <div class="hero-copy">
-                    <span class="eyebrow">Work In Progress</span>
-                    <h1>Page Under Construction</h1>
-                    <p class="hero-text">This page is a work in progress. Please check back soon.</p>
+            <section class="panel services-hero">
+        <label class="tabs-dropdown-label" for="service-tabs-select">Choose a service topic</label>
+        <select class="tabs-dropdown" id="service-tabs-select" aria-label="Choose a service topic">
+            <option value="primary-care">Primary Care</option>
+            <option value="minor-surgery">Minor Surgery</option>
+            <option value="wellness">Wellness & Prevention</option>
+            <option value="weight-management">Weight Management</option>
+            <option value="hormone-therapy">Hormone Therapy</option>
+            <option value="addiction-management">Addiction Management</option>
+            <option value="aesthetics">Aesthetics</option>
+        </select>
+        <div class="tabs" role="tablist">
+            <button class="tab" type="button" role="tab" aria-selected="true" data-target="primary-care">
+                Primary Care
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="minor-surgery">
+                Minor Surgery
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="wellness">
+                Wellness & Prevention
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="weight-management">
+                Weight Management
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="hormone-therapy">
+                Hormone Therapy
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="addiction-management">
+                Addiction Management
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-target="aesthetics">
+                Aesthetics
+            </button>
+        </div>
+
+        <div class="tab-panels">
+            <div id="primary-care" class="tab-panel active">
+                <h1>Primary Care</h1>
+                <p>Your trusted partner for ongoing health needs, annual exams, and personalized care.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Acute Illness Treatment</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we understand that acute illnesses can happen to anyone at any time. These are typically short-term health problems that occur suddenly and require prompt medical attention. Some examples of acute illnesses include the flu, strep throat, ear infections, and sinus infections.</p>
+                        <p>Acute illnesses can be caused by viruses, bacteria, or other pathogens. They can also be a result of an injury or trauma. The symptoms of acute illnesses can vary depending on the specific condition, but common signs may include fever, coughing, sore throat, body aches, and fatigue.</p>
+                        <p>If you are experiencing any of these symptoms or suspect that you have developed an acute illness, our team at Kaysville Clinic is here to help. Our experienced family medicine practitioners are well-equipped to diagnose and treat a wide range of acute illnesses. We will work with you to create an individualized treatment plan that addresses your specific needs and helps you recover as quickly as possible.</p>
+                        <p>At Kaysville Clinic, we believe in the importance of timely and effective treatment for acute illnesses. Ignoring or delaying treatment can often lead to more serious and long-lasting health problems. That's why we offer same-day appointments for acute illnesses and strive to provide prompt and efficient care.</p>
+                        <p>In addition to medical treatment, our team also emphasizes the importance of preventive measures for acute illnesses. We encourage all of our patients to stay up-to-date on vaccinations and practice good hygiene habits to help prevent the spread of infections.</p>
+                        <p>Don't let an acute illness disrupt your life. Trust the compassionate and experienced team at Kaysville Clinic to help you get back on track to good health. Schedule an appointment with us today for any acute illness concerns, and let us take care of your medical needs.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Chronic Condition Management</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Chronic conditions are long-term health conditions that require ongoing medical care and management. These conditions may persist for months or even years, and can greatly affect an individual's quality of life. Some examples of chronic conditions include diabetes, hypertension, arthritis, asthma, and heart disease.</p>
+                        <p>At Kaysville Clinic, we understand the challenges that come with managing a chronic condition. Our team of healthcare professionals is dedicated to providing comprehensive and personalized care to help patients effectively manage their condition. We work closely with our patients to develop a treatment plan that fits their specific needs, taking into consideration factors such as age, lifestyle, and overall health.</p>                   
+                        <p>Our approach to managing chronic conditions involves not only treating the symptoms but also addressing the underlying causes. This may include regular check-ups, medication management, lifestyle modifications such as diet and exercise, and education on self-care. Our goal is to empower our patients to take an active role in managing their condition and improving their overall health.</p>
+                        <p>In addition to medical care, we offer support and resources to help patients cope with the physical, emotional, and financial impacts of living with a chronic condition. We also collaborate with specialists and other healthcare providers to ensure our patients receive the best possible care.</p>
+                        <p>If you or a loved one is living with a chronic condition, know that you are not alone. At Kaysville Clinic, we are committed to helping you live your best life despite your condition. Contact us today to schedule an appointment and learn more about our services for managing chronic conditions.</p>
+                    </div>
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Women's Health</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, our team of dedicated physicians offers a wide range of services to address female problems. We provide thorough screenings and diagnostic tests to identify any underlying health conditions and offer personalized treatment plans to alleviate symptoms and improve overall reproductive health.</p>
+                        <p>Female problems refer to health conditions that specifically affect women, such as menstrual disorders, urinary tract infections, breast abnormalities, menopause-related issues, vaginal infections, painful/irregular menstrual periods, and pelvic pain.</p>
+                        <p><strong>Menstrual Disorders:</strong> Menstrual disorders can cause discomfort and disrupt daily activities. Our physicians can help manage these issues through medication, lifestyle changes, and other forms of treatment.</p>
+                        <p><strong>Urinary Tract Infections (UTIs):</strong> Frequent UTIs can be a common problem for women. We provide prompt diagnosis and effective treatment to alleviate symptoms and prevent recurrent infections.</p>
+                        <p><strong>Breast Pain:</strong> Breast exams are an essential part of women's health screenings. Our physicians are trained to detect any abnormalities in breast tissue and provide appropriate referrals for further evaluation if needed.</p>
+                        <p><strong>Menopause-Related Issues:</strong> Menopause can bring about a host of physical and emotional changes. Our team can help manage symptoms such as hot flashes, mood swings, and vaginal dryness through hormone therapy, lifestyle modifications, and other treatment options.</p>
+                        <p><strong>Vaginal Infections:</strong> Vaginal infections can cause discomfort and affect a woman's quality of life. Our physicians can provide proper diagnosis and treatment for various types of vaginal infections, such as yeast infections, bacterial vaginosis, and sexually transmitted infections.</p>
+                        <p><strong>Painful/Irregular Menstrual Periods:</strong> Painful or irregular periods can be indicative of underlying health issues. Our physicians can help identify and treat the root cause of these problems to improve overall reproductive health.</p>
+                        <p><strong>Pelvic Pain:</strong> Pelvic pain can be caused by various conditions such as endometriosis, ovarian cysts, or pelvic inflammatory disease. We provide comprehensive evaluations and personalized treatment plans to alleviate discomfort and improve quality of life.</p>
+                    </div>
+                    
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Men's Health</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Male problems refer to any medical conditions or health issues that are specific to men. Some common male problems include enlarged prostate, prostate cancer screening, impotence, and testicular or scrotal pain.</p>
+                        <p>At Kaysville Clinic, we understand that these issues can be concerning and may affect a man's quality of life. That is why we offer comprehensive care and services to help our male patients address any problems they may be facing.</p>
+                        <p><strong>Enlarged Prostate:</strong> As men age, it is common for the prostate gland to enlarge in size. This condition is known as benign prostatic hyperplasia (BPH). While BPH is not cancerous, it can cause bothersome urinary symptoms such as frequent urination, difficulty starting or stopping the urine stream, and feeling like the bladder is not completely empty.</p>
+                        <p><strong>Prostate Cancer Screening:</strong> Prostate cancer is the most common cancer among men, with over 190,000 new cases diagnosed in the United States each year. Early detection is crucial for successful treatment and improving survival rates.</p>
+                        <p><strong>Impotence:</strong> Impotence, also known as erectile dysfunction (ED), is a common male problem that refers to the inability to get or keep an erection firm enough for sexual intercourse.</p>
+                        <p><strong>Testicular or Scrotal Pain:</strong> Pain in the testicles or scrotum can be a symptom of various conditions, including infection, injury, or underlying medical issues. It is essential to address any pain or discomfort in this area promptly.</p>
+                        <p>At Kaysville Clinic, we are committed to providing comprehensive care for male patients. Our team of providers has extensive experience in managing and treating male problems, from routine health screenings to specialized care for specific conditions.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Mental Health Support</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Mental health is an important aspect of our overall well-being, and it refers to our emotional, psychological, and social well-being. It affects how we think, feel, and act in daily life.</p>
+                        <p>At Kaysville Clinic, we understand the importance of mental health and strive to provide comprehensive care for individuals struggling with various mental health conditions. We offer specialized treatment programs for opiate dependence, depression, anxiety, attention deficit disorder, substance abuse, and alcoholism.</p>
+                        <p><strong>Opiate Dependence Treatment:</strong> We offer a multi-faceted approach that includes medication-assisted treatment, counseling and therapy, and support groups.</p>
+                        <p><strong>Depression Treatment:</strong> Our team offers evidence-based treatments for depression, including medication management, therapy, and lifestyle modifications.</p>
+                        <p><strong>Anxiety Treatment:</strong> We offer cognitive-behavioral therapy, relaxation techniques, and stress management strategies.</p>
+                        <p><strong>Attention Deficit Disorder (ADD) Treatment:</strong> Our clinic provides comprehensive care including medication management, behavioral therapy, and educational support.</p>
+                        <p><strong>Substance Abuse and Alcoholism Treatment:</strong> We offer evidence-based treatments including medication-assisted treatment, behavioral therapy, and support groups.</p>
+                        <p>At Kaysville Clinic, we are dedicated to providing compassionate and comprehensive care for individuals struggling with various mental health conditions. Don't hesitate to reach out to us if you or a loved one needs support in managing mental health concerns.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Dermatology</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we understand that skin health is an important aspect of overall well-being. That's why we offer a range of dermatology services to help our patients achieve and maintain healthy skin.</p>
+                        <p>Our dermatology services cover a wide variety of conditions, including acne, eczema, psoriasis, rosacea, skin cancer detection and treatment, warts, moles, and other skin growths.</p>
+                        <p>We believe in taking a holistic approach to dermatology, combining medical expertise with personalized care to address the unique needs of each patient.</p>
+                        <p>Our services include medications, phototherapy, cryotherapy, and biopsies when needed. Whether you're struggling with a chronic condition or just want to improve the appearance of your skin, we are here to help.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Injections</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">injections
+
+At Kaysville Clinic, we offer a variety of injections to help our patients with
+various health conditions. These injections include cortisone, hyalgan and
+synvisc, and B12.  Our team of medical professionals is trained and
+experienced in administering these injections safely and effectively.
+
+Cortisone Injections
+Cortisone injections are a type of steroid medication that is injected into
+the body to reduce inflammation and pain. They contain a synthetic
+version of cortisol, which is a hormone naturally produced by the body.
+These injections are commonly used to treat conditions such as arthritis,
+tendonitis, bursitis, and other inflammatory disorders.
+
+What can Cortisone Injections Treat?
+• Arthritis: Cortisone injections can provide relief for patients with
+arthritis, including osteoarthritis and rheumatoid arthritis.
+• Tendonitis: These injections can help reduce pain and inflammation
+in the tendons, which are tissues that connect muscles to bones.
+• Bursitis: Bursae are small fluid-filled sacs that cushion and lubricate
+joints. When these sacs become inflamed, cortisone injections can
+be used to reduce pain and inflammation.
+
+Benefits of Cortisone Injections
+• Quick relief: Cortisone injections provide fast and effective pain relief
+for a variety of conditions.
+• Minimally invasive: These injections are administered directly into the
+affected area, making them less invasive compared to other
+treatment options.
+• Long-lasting effects: The effects of cortisone injections can last for
+several weeks or months, providing extended relief from pain and
+inflammation.
+
+Hyalgan and Synvisc Injections
+Hyalgan and Synvisc are types of hyaluronic acid injections. Hyaluronic
+acid is a substance naturally found in the body that helps lubricate and
+cushion joints. These injections are used to treat osteoarthritis, a
+degenerative joint disease that causes pain and stiffness in the joints.
+
+What can Hyalgan and Synvisc Injections Treat?
+• Osteoarthritis: These injections can provide relief for patients with
+mild to moderate osteoarthritis by reducing pain and improving joint
+mobility.
+
+Benefits of Hyalgan and Synvisc Injections
+• Lubrication: By injecting hyaluronic acid into the joints, these
+injections provide lubrication to help reduce pain and improve joint
+movement.
+• Long-lasting effects: The benefits of these injections can last for
+several months, providing extended relief from osteoarthritis
+symptoms.
+
+B12 Injections
+B12 injections are a type of vitamin supplement that contains high levels of
+vitamin B12. This essential nutrient is important for various bodily functions,
+including the production of red blood cells and maintaining a healthy
+nervous system.
+
+What can B12 Injections Treat?
+• Vitamin deficiency: These injections can help treat vitamin B12
+deficiency, which can lead to symptoms such as fatigue, weakness,
+and numbness in the hands and feet.
+
+Benefits of B12 Injections
+• Boosts energy: By increasing vitamin B12 levels in the body, these
+injections can help improve energy levels and reduce fatigue.
+• Improves overall health: Vitamin B12 is essential for several bodily
+functions, so these injections can help improve overall health and
+well-being.
+
+At Kaysville Clinic, our injections services provide a variety of benefits for
+our patients. Whether you are suffering from joint pain and inflammation
+or vitamin deficiencies, our skilled healthcare professionals can help
+determine which type of injection is best for your individual needs.</pre>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Men's Sexual Health</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">Mens sexual health
+Erectile Dysfunction in Men: A Comprehensive
+Guide to Understanding and Treatment
+Erectile dysfunction (ED) is one of the most well-known symptoms of
+andropause, which is the male version of menopause. Andropause is a
+condition commonly associated with the natural male aging process, and
+it is often the result of low testosterone levels. Unfortunately, ED is also quite
+common. In fact, some researchers estimate that as much as 40 percent
+of men at the age of 40 and 70 percent of men at the age of 70 suffer from
+some degree of ED.
+The most prominent result of ED is, understandably, its effect on male
+sexual health. However, ED can combine with other symptoms of
+andropause like stress, anxiety, and reduced sex drive to form a negative
+feedback loop wherein these symptoms feed off of and further contribute
+to one another.
+The Facts About Erectile Dysfunction
+Erectile dysfunction is best described as the inability to get and keep an
+erection to the point that the ability to have sex is reduced or not possible
+at all. Erections are the result of sexual arousal, but they also rely on a
+variety of components in the human body, including hormones, nerves,
+blood vessels, and muscles.
+What are the Primary Causes of Erectile
+Dysfunction?
+
+With healthy erections depending on so many different components of the
+body, there are a wide range of potential sources of ED, including:
+ Low testosterone levels
+ Excess body fat
+ Sleep issues
+ Stress
+ Anxiety and depression
+ High blood pressure, high cholesterol, and other aspects of
+cardiovascular disease
+ Diabetes
+ Excess use of alcohol, drugs, and tobacco
+ Certain medical treatments and surgeries
+ Injuries to the arteries or nerves
+The Relationship Between Low Testosterone
+and Erectile Dysfunction
+Low testosterone levels are the primary characteristic of a condition known
+as hypogonadism. Andropause, which is caused by the low levels of
+testosterone associated with the natural male aging process, is also
+referred to as late-onset hypogonadism (LOH). The low levels of
+testosterone associated with andropause can lead to ED and a wide range
+of other symptoms, many of which can also contribute to ED, including:
+ Erectile dysfunction (ED)
+ Reduced sex drive
+ Excess body fat
+ Sleep issues
+ Hot flashes
+ Fatigue
+ Depressed mood and increased risk of depression
+ Enlarged male breast tissue (gynecomastia)
+ Issues with memory and focus
+ Reduced muscle mass and strength
+
+The Interplay Between Erectile Dysfunction,
+Low Testosterone, and Reduced Sex Drive
+Low sex drive, also known as low libido, is another one of the more
+common symptoms of andropause. Some estimates state that as many
+as one in five men experience low sex drive at some point in their lives. As
+is the case with ED, low sex drive can be caused by a wide range of
+potential sources. Some of those sources can be external, such as certain
+medications and the excess use of alcohol, drugs, and tobacco.
+Unfortunately, there are also a variety of potential internal sources that
+often accompany andropause. These sources can also contribute to one
+another in negative feedback loop relationships. For example, ED can lead
+to reduced sex drive and vice versa. The same can also be said of anxiety,
+depression, and stress as they relate to sex drive and ED. The range of
+potential sources include:
+ Hormonal imbalances, especially low testosterone
+ Erectile dysfunction (ED)
+ Anxiety
+ Depression
+ Stress
+ Fatigue
+ Excess body fat
+ Cardiovascular disease
+ Diabetes
+ High blood pressure (hypertension)
+What Are the Best Ways to Address Erectile
+Dysfunction and Low Sex Drive?
+Fortunately, there are multiple options for men to naturally address ED and
+support healthy sexual function.
+Stress Reduction Techniques
+
+Stress is a major source of ED, and these two conditions often contribute to
+one another. The human body naturally responds to stress with cortisol,
+which is also referred to as the “stress hormone.” While cortisol allows the
+body to effectively respond to stress by helping the body return to a
+balanced state after exposure to stressful situations, extended and
+repeated periods of stress can lead to the body producing too much
+cortisol. Chronic stress and high cortisol can then contribute to one
+another in a negative feedback loop and lead to a wide range of
+symptoms and health conditions, including ED. Reducing stress can,
+therefore, potentially address ED and contribute to healthy sexual function.
+Some of the best ways to reduce stress include avoiding caffeine, eating
+healthy food, practicing deep breathing, adhering to a consistent exercise
+routine, and getting quality sleep on a regular basis.
+Support Balanced Testosterone Levels
+Since hypogonadism is such a common source of ED, it is possible for men
+to address ED and support optimal sexual health by balancing levels of
+testosterone.
+As is the case with cortisol, it is possible to naturally support balanced
+levels of testosterone by exercising regularly and adhering to a healthy
+diet. Unfortunately, those methods often become less effective after the
+onset of andropause.
+An increasing number of men struggling with the low testosterone levels
+associated with andropause are turning to hormone replacement therapy
+(HRT) to promote hormonal balance. While HRT can be administered using
+creams, gels, capsules, and patches, testosterone is most commonly
+administered in the form of liquid injections. These weekly injections deliver
+prescribed amounts of testosterone to the body directly through the
+bloodstream. However, self-injecting testosterone on a weekly basis can
+be inconvenient and has the potential to lead to pain and discomfort at
+the injection site.
+
+For a more convenient mode of administering testosterone medications, a
+growing number of men are taking advantage of hormone pellet therapy.
+Standard testosterone pellets have been developed to provide the body
+with consistent amounts of testosterone for months at a time so that fewer
+procedures are necessary. During a pellet insertion procedure, clusters of
+prescribed hormone medications are packed into pellets and carefully
+inserted under the skin. While this method has enhanced the convenience
+of testosterone replacement therapy, some patients can still experience
+pain and discomfort at the insertion site.
+
+
+At Kaysville Clinic, we are committed to providing comprehensive care for
+male patients. Our team of providers has extensive experience in
+managing and treating male problems, from routine health screenings to
+specialized care for specific conditions. We understand the sensitive
+nature of these issues and strive to create a comfortable and confidential
+environment for our patients. If you are experiencing any male problems,
+do not hesitate to schedule an appointment with us.</pre>
+                    </div>
                 </div>
-            </section>
+            </div>
+
+<div id="minor-surgery" class="tab-panel">
+                <h1>Minor Surgery</h1>
+                <p>Comfortable, professional treatment for common minor procedures and outpatient care.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Skin Procedures</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Our skin is the largest organ in our body, and it is exposed to various external factors on a daily basis. This can result in various skin conditions that may require minor surgical intervention to treat and improve the overall health of our skin. At Kaysville Clinic, we offer a range of minor skin procedures such as:</p>
+                        <p>Skin biopsies: This procedure involves removing a small sample of skin for examination under a microscope. It is commonly used to diagnose skin conditions such as skin cancer, rashes, and infections.</p>
+                        <p>Mole removal: Mole removal: Moles are usually harmless, but they may become a cosmetic concern or pose a risk of developing into skin cancer. We offer safe and effective mole removal procedures to improve the appearance of your skin and prevent potential health risks.</p>
+                        <p>Wart removal: Warts are small growths on the skin caused by a virus. They can be unsightly and may cause discomfort, especially if they are located on the feet or hands. Our physicians can safely remove warts using various techniques such as freezing, burning, or cutting</p>
+                        <p>Cyst removal: Cysts are abnormal sacs filled with fluid or semi-solid material that can occur under the skin, in organs, or within tissues. They can be caused by infections, blockages in ducts, or genetic conditions. During cyst removal, the cyst is carefully excised and any remaining fragments are removed to prevent regrowth. Cyst removal may be recommended if the cyst is causing discomfort, becoming infected, or if it is potentially cancerous.</p>
+                        <p>Lipoma removal: Lipoma removal is a similar surgical procedure to cyst removal, but specifically targets the removal of lipomas. Lipomas are slow-growing, fatty tumors that can occur anywhere on the body where fat tissue is present. They are usually harmless and painless, but may cause discomfort if they grow large enough.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Ingrown Toenails</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Ingrown toenails occur when the edge of a toenail grows into the surrounding skin, resulting in pain, swelling, and infection. This condition is commonly caused by incorrect trimming of nails, ill-fitting shoes, or injury. At Kaysville Clinic, we offer minor surgical procedures to treat ingrown toenails and prevent further complications. These procedures may include:</p>
+                        <p><b>Partial nail avulsion:</b> This procedure involves removing a small portion of the nail that is causing the ingrown toenail. The area is then treated to prevent regrowth of the nail.</p>
+                        <p><b>Total nail avulsion:</b> In more severe cases, the entire nail may need to be removed. This can provide immediate relief from pain and allow for proper healing of the affected area.</p>
+                        <p><b>Matrixectomy:</b> This procedure involves removing a portion of the nail bed to prevent the ingrown toenail from recurring.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Injury Treatment</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we understand that injuries can happen to anyone at any time. That's why we offer a wide range of services for the treatment of common injuries such as strains and sprains, fractures, and lacerations.</p>
+                        <p><strong>Strains and Sprains:</strong> A strain occurs when a muscle or tendon is stretched or torn, while a sprain refers to an injury to a ligament. These injuries can occur due to overuse, sudden movements, or trauma. Symptoms of strains and sprains may include pain, swelling, bruising, and difficulty moving the affected area.</p>
+                        <p><strong>Treatment:</strong> The treatment for strains and sprains may vary depending on the severity of the injury. In most cases, rest, ice, compression, and elevation (RICE) is recommended to help reduce pain and swelling. Physical therapy may also be recommended to help improve strength and flexibility in the affected area. In severe cases, surgery may be necessary.</p>
+                        <p><strong>Fractures:</strong> A fracture refers to a break or crack in a bone. This type of injury can occur due to trauma, such as a fall or sports accident. Symptoms of a fracture may include pain, swelling, bruising, and difficulty moving the affected area.</p>
+                        <p><strong>Treatment:</strong> Treatment for fractures will depend on the location and severity of the injury. For minor fractures, immobilization with a cast or splint may be sufficient for healing. In more complex cases, surgery may be necessary to realign and stabilize the broken bone.</p>
+                        <p><strong>Lacerations:</strong> A laceration is a deep cut or tear in the skin. Treatment may include cleaning the wound, applying stitches or sutures if needed, and dressing the wound to promote healing.</p>
+                        <p>At Kaysville Clinic, our injuries services aim to provide timely and effective treatment for a wide range of common injuries. Our experienced team is dedicated to helping you recover from your injury and get back to your daily activities as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wellness" class="tab-panel">
+                <h1>Wellness & Prevention</h1>
+                <p>Preventive screenings, lifestyle guidance, and proactive care to keep you healthy.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Routine Wellness Visits</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Annual exams let us track changes in your health, review medical history, and identify risks early. This is also a good time to update vaccines and screenings.</p>
+                        <p>An annual wellness visit is one of the best investments in your long-term health. During your exam, we review your medical history, perform a thorough physical examination, check vital signs, and discuss any health concerns. This is an ideal time to discuss preventive measures, update vaccinations, review age-appropriate screenings, and establish health goals for the year ahead. Early detection of health issues makes treatment easier and outcomes better.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Immunizations</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we offer a variety of services to help keep you and your family healthy. One important service that we provide is immunizations. Immunizations are shots given to protect against certain diseases, and they are essential for maintaining good health.</p>
+                        <p><strong>What are Tetanus/Diphtheria Immunizations?</strong> Tetanus and diphtheria are two potentially serious bacterial infections that can be prevented with immunizations. These shots protect against both diseases, so you only need to receive one shot to be protected.</p>
+                        <p>Tetanus, also known as lockjaw, is caused by a bacteria found in soil, dust, and animal feces. It can enter the body through cuts or wounds and cause severe muscle spasms, difficulty swallowing, and even death. Diphtheria is a respiratory illness caused by bacteria spread through coughing or sneezing.</p>
+                        <p><strong>Benefits of Tetanus/Diphtheria Immunizations:</strong> Getting vaccinated can protect you from becoming seriously ill or even dying from these infections. Adults should receive booster shots every 10 years to maintain immunity.</p>
+                        <p><strong>Flu Immunizations:</strong> We also offer annual flu shots to reduce your risk of influenza and serious complications.</p>
+
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Physical Exams</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we believe that regular physical exams are an essential part of maintaining good health. We offer a variety of physical exams for patients of all ages and backgrounds.</p>
+                        <p>From annual check-ups to specialized exams such as scout, female, sport, missionary and FAA exams, we provide comprehensive care in a comfortable setting.</p>
+                        <p><strong>Annual Exams:</strong> Track changes in your health, identify concerns early, and update necessary screenings and vaccinations.</p>
+                        <p><strong>Scout Physicals:</strong> Required for camp, high adventure, and scouting activities.</p>
+                        <p><strong>Female Exams including Pap Smears:</strong> Vital for reproductive health and preventive screening.</p>
+                        <p><strong>Sport Physicals:</strong> Ensure safe participation in organized athletics.</p>
+                        <p><strong>Missionary Physicals:</strong> Complete mission-required evaluations and paperwork.</p>
+                        <p><strong>FAA Exams:</strong> Aviation-focused medical exams to support compliance and safety.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="weight-management" class="tab-panel">
+                <h1>Weight Management</h1>
+                <p>Supportive plans and guidance for healthy, sustainable weight goals.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Medication-Assisted Weight Loss</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>At Kaysville Clinic, we understand the struggles of losing weight and maintaining a healthy diet. That's why we offer medication assisted weight loss with GLP-1s (such as semaglutide and tirzepitide) as one of our services.</p>
+                        <p>This approach has proven extremely effective and safe. We have helped numerous patients achieve their weight loss goals.</p>
+                        <p>Medication assisted weight loss is typically recommended for individuals who have a body mass index (BMI) of 30 or higher, which falls under the category of obesity. However, GLP-1s can also help individuals trying to lose an extra 5 or 10 pounds to achieve their ideal weight regardless of BMI.</p>
+                        <p>Semaglutide has proven to be effective in aiding weight loss by helping regulate insulin and appetite, reducing hunger, and increasing fullness.</p>
+                        <p>Our healthcare providers work with you to create an individualized treatment plan that includes appropriate dosing of medication and guidance through the process. These medications should only be taken with the guidance and follow-up of a medical professional.</p>
+                        <p>The most common side effects include nausea and constipation. Some patients also report acid reflux, stomach pain, vomiting, and diarrhea.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>What You Need to Know</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>GLP-1 agonists such as Semaglutide and Terzepatide are very effective for losing weight and have a good safety record. Losing weight with GLP-1 agonists is the easy part. Maintaining that weight loss is the hard part.</p>
+                        <p>In short, the shot is not the answer. It is an aid. Maintaining weight loss involves a complete lifestyle make-over.</p>
+                        <p>You must address diet, sleep, exercise, stress, hormones, and nutrition with permanent changes to maintain results.</p>
+                        <p><strong>Diet:</strong> Assess eating behaviors and identify problem areas such as portion size, overeating, poor food choices, snacking, and stress eating. Limit refined sugars and processed foods.</p>
+                        <p><strong>Sleep:</strong> You need at least 7 hours of good, sound sleep. Eight hours would be even better.</p>
+                        <p><strong>Exercise:</strong> Both aerobic exercise and weight training are important. Weight training is especially important for metabolism and muscle mass.</p>
+                        <p><strong>Stress:</strong> Stress needs to be managed because chronic stress hormones can contribute to weight gain.</p>
+                        <p><strong>Hormones:</strong> As we age, hormone levels decline, which can affect metabolism and energy. Hormone optimization may be important.</p>
+                        <p><strong>Nutrition:</strong> Good nutrition is always important for proper cellular function and metabolism. Common deficiencies include Vitamin D, Magnesium, and Iodine.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Why Medical Follow-Up Matters</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Our team monitors progress, evaluates side effects, and helps create a treatment plan that is safe, effective, and tailored to each patient's needs.</p>
+                        <p>Regular follow-up visits are essential for safe and effective weight loss. We monitor your weight loss progress, check for side effects, ensure the medication is working well for you, and adjust your treatment plan as needed.</p>
+                        <p>Unfortunately, unscrupulous businesses are offering GLP-1s online with minimal or no history, physical exam, consultation, or follow-up. We provide appropriate medical oversight to support safety and long-term results.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Weight Management Verbatim Copy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">medication-assisted weight loss
+Medication Assisted Weight Loss
+At Kaysville Clinic, we understand the struggles of losing weight and maintaining a
+healthy diet. That's why we offer medication assisted weight loss with GLP-1s (such
+as semaglutide and tirzepitide) as one of our services. This approach has proven
+extremely effective and safe. We have helped numerous patients achieve their weight
+loss goals.
+Medication assisted weight loss is typically recommended for individuals who have a
+body mass index (BMI) of 30 or higher, which falls under the category of obesity.
+However, GLP-1s can also help individuals just trying to lose an extra 5 or 10 pounds
+to achieve their ideal weight regardless of BMI. In reality, there are many people with
+normal BMI who qualify as “skinny fat”, meaning a high body fat percentage. Body
+composition and body fat percentage are more accurate indicators of health. Body
+composition is a metric we monitor in all of our patients.
+Semaglutide is the most commonly used GLP-1. Semaglutide is an injectable peptide
+that has traditionally been used to treat type 2 diabetes. (Ozempic is a branded form of
+Semaglutide used to treat diabetes.) Semaglutide has proven to be effective in aiding
+
+weight loss. It works by mimicking the effects of a hormone called glucagon-like
+peptide-1 (GLP-1), which helps to regulate insulin and appetite. By activating GLP-1
+receptors in the brain, Semaglutide can reduce feelings of hunger. In the gut,
+semaglutide slows digestion leading to an increased sense of fullness. As a result, less
+food is consumed leading to fewer calories.
+At Kaysville Clinic, our healthcare providers will work with you to create an
+individualized treatment plan that includes appropriate dosing of medication and
+guidance through the process. Unfortunately, unscrupulous businesses looking to
+simply capitalize on the weight loss market are offering GLP-1s on the internet with
+minimal or no history, physical exam, consultation, or follow-up. These medications
+should only be taken with the guidance and follow-up of a medical professional.
+Semaglutide is self-administered once a week via injection typically into your
+abdomen.
+Studies have shown that patients who use Semaglutide for weight loss can experience
+significant and sustained weight loss. In a clinical trial, participants who received
+Semaglutide lost an average of 15% of their body weight over a one-year period. In
+our experience, we have seen weight loss of up to 30% of body weight in half that
+amount of time. This medication has also been found to improve other health factors
+such as blood pressure and cholesterol levels. Additionally, Semaglutide has a low
+risk of side effects and is generally well-tolerated by patients.
+The most common side effects include nausea and constipation. Patients also report
+acid reflux, stomach pain, vomiting, and diarrhea.
+At Kaysville Clinic, we are dedicated to helping our patients achieve their weight loss
+goals. With medication assisted weight loss, we offer cutting-edge and evidence-based
+treatments yielding great results. If you are interested in learning more about this
+service or would like to schedule an appointment, please contact us today. Let us help
+you on your journey towards a healthier and happier life.
+GLP-1 Done Right
+
+Weight management
+
+What you need to know about
+weight management
+
+GLP-1 agonists such as Semaglutide and Terzepatide are very effective for
+losing weight and have a good safety record.  Millions of patients
+worldwide are taking GLP-1s not only for weight loss but for diabetes as
+well.  Losing weight with GLP-1 agonists is the easy part.  Maintaining that
+weight loss is the hard part and takes much more effort.  In short, the
+“shot” is not the answer.  It is an aid.  Maintaining weight loss involves a
+COMPLETE lifestyle make-over.  If you want to lose weight AND keep it off, in
+addition to the “shot” you MUST address the following areas and make
+PERMANENT changes:</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hormone-therapy" class="tab-panel">
+                <h1>Hormone Therapy</h1>
+                <p>Personalized hormone care to help support energy, balance, and overall wellness.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Hormone Replacement Therapy for Women</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Menopause is a natural biological process that signifies the end of a woman's reproductive years. Hormone replacement therapy (HRT) replenishes essential hormones, like estrogen and progesterone, that naturally decline during menopause.</p>
+                        <p>Common symptoms include hot flashes, night sweats, mood swings, vaginal dryness, sleep disturbances, and fatigue.</p>
+                        <p>HRT can help relieve symptoms and may also support bone density, heart health, and quality of life when appropriately managed.</p>
+                        <p>HRT options include estrogen hormone therapy and combination hormone therapy, and can be customized to individual patient goals and risk profiles.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Testosterone Replacement Therapy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Hormone and Testosterone Replacement Therapy (TRT) is used to supplement hormones that decline due to aging or medical conditions.</p>
+                        <p>TRT may improve energy, mood, body composition, sleep quality, libido, and bone density by restoring hormones to healthier physiological ranges.</p>
+                        <p>Our team evaluates symptoms, labs, and treatment goals to design a personalized plan. Whether you are dealing with menopause symptoms or male fatigue and weakness, we can help guide a safe and effective treatment strategy.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Administration Options</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Hormones may be delivered through creams, patches, oral tablets, injections, or pellets.</p>
+                        <p>Systemic therapy addresses broader symptoms, while local therapy can target issues like vaginal dryness and painful intercourse.</p>
+                        <p>We help choose the safest and most effective administration option for your needs.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Hormone Therapy Verbatim Copy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">Hormone Therapy for Women: A
+Comprehensive Guide for Menopause
+Treatment
+Menopause is a natural biological process that signifies the end of a
+woman’s reproductive years. While it is a normal transition, the symptoms
+accompanying this phase, such as hot flashes, night sweats, vaginal
+dryness, and mood swings, can vary in intensity, often causing significant
+discomfort and affecting the quality of life.
+Hormone replacement therapy (HRT) replenishes essential hormones, like
+estrogen and progesterone, that naturally decline during menopause,
+restoring balance and well-being.
+Approximately 6,000 women in the U.S. reach the menopause stage each
+day, totaling around 2 million women annually, according to the North
+American Menopause Society. Globally, the number of women aged 50
+and older was estimated at 985 million in 2020, a figure that is expected to
+climb to 1.65 billion by 2050. These numbers highlight the immense need
+for solutions that prioritize women’s comfort and long-term health.
+This guide explores the science, benefits, and safe implementation of
+hormone replacement therapy (HRT), empowering healthcare providers to
+integrate this treatment effectively into their practices. Systemic hormone
+therapy options, such as bioidentical hormones, provide tailored solutions
+for diverse patient needs.
+What is Hormone Replacement Therapy
+(HRT) for Menopause?
+Menopause is the permanent cessation of the menstrual cycle caused by
+the natural decline of ovarian function. This transition typically occurs
+between the ages of 45 and 55, though some women may experience
+delayed or early menopause. It marks the end of fertility and is
+accompanied by hormonal fluctuations that can trigger a variety of
+menopausal symptoms.
+Common Symptoms
+The symptoms of menopause can vary widely in intensity and impact.
+Common issues include:
+ Hot flashes and night sweats
+ Mood swings and irritability
+ Vaginal dryness and painful intercourse
+ Sleep disturbances
+ Fatigue
+If left untreated, these symptoms can significantly affect a woman’s
+quality of life.</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div id="addiction-management" class="tab-panel">
+                <h1>Addiction Management</h1>
+                <p>Compassionate support and treatment planning for recovery and long-term wellness.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Opioid Dependence Treatment</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Kaysville Clinic is committed to providing quality care for individuals struggling with opioid addiction.</p>
+                        <p>We offer evidence-based treatments, including medication-assisted treatment and therapy, to help patients overcome addiction and manage underlying contributing issues.</p>
+                        <p>Our compassionate and experienced medical team works closely with each patient to develop a personalized treatment plan for long-term recovery.</p>
+                        <p>Opioid Addiction, now referred to as Opioid Use Disorder, is a medical condition characterized by a destructive pattern of opioid use that causes significant physical and social impairment or distress.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Common Withdrawal Symptoms</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Withdrawal symptoms may include anxiety, nervousness, irritability, sweats, chills, muscle aches, and sometimes diarrhea.</p>
+                        <p>These symptoms can be intense and often require structured medical support to improve comfort and treatment success.</p>
+                        <p>Medication-assisted treatment can reduce the intensity of withdrawal symptoms and improve treatment success rates.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Recovery Planning</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Unfortunately implants have been removed from the market. However, monthly injections of Sublocade have been a very effective alternative to oral buprenorphine.</p>
+                        <p>If you would like to start your path to opioid dependence recovery, schedule a consultation with our team.</p>
+                        <p>We provide coordinated follow-up and support through recovery planning to help promote long-term stability.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Opioid Treatment Verbatim Copy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">OPIOID TREATMENT
+Beat Addiction
+Kaysville Clinic is committed to providing quality care for individuals
+struggling with opioid addiction. Our focus goes is to address the root
+causes and provide comprehensive treatment that leads to long-
+term recovery.
+
+Opioid Dependence
+Treatment
+
+At Kaysville Clinic, we understand the importance of treating opioid
+dependence and helping individuals achieve long-term recovery. We offer
+evidence-based treatments, including medication-assisted treatment
+and therapy, to help patients overcome their addiction and manage any
+underlying issues that may have contributed to their dependence.
+Symptoms of Opioid Dependence
+• Anxiety
+• Nervousness
+• Irritability
+• Sweats
+• Chills
+• Muscle Aches
+• Sometimes Diarrhea
+Options for Treating Opioid Dependence
+Unfortunately implants have been removed from the market. However,
+monthly injections of Sublocade have been a very effective alternative to
+oral buprenorphine.
+
+What We Can Do For You
+I have been treating patients with opioid dependence for 12 years using
+the oral and implant medications.  If you'd like to start your path to
+complete opioid dependence recovery, schedule a consultation!</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aesthetics" class="tab-panel">
+                <h1>Aesthetics</h1>
+                <p>Skin-focused services designed to help you look and feel your best.</p>
+
+                <div class="service-section">
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>ClearLift by Harmony XL Pro</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>ClearLift, also known as the laser facelift, is a non-invasive and pain-free laser treatment that uses advanced technology to target signs of aging on the skin.</p>
+                        <p>It works by creating controlled micro-injuries in deeper skin layers, stimulating collagen production and promoting cell turnover for a more youthful appearance.</p>
+                        <p>Common treatment goals include reducing fine lines, tightening sagging skin, improving texture and tone, minimizing pores, and treating sun damage and acne scars.</p>
+                        <p>Most sessions last 15-30 minutes with little to no downtime. Some mild redness may occur but usually subsides within a few hours.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Dye VL Laser Treatment</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Dye VL by Harmony XL Pro is an advanced laser treatment for pigmented lesions with precision and minimal discomfort.</p>
+                        <p>It uses high-intensity light to break down excess melanin and can treat sunspots, age spots, freckles, melasma, and birthmarks.</p>
+                        <p>Patients may feel a mild snapping sensation. Mild redness or swelling can occur temporarily, and visible improvement is often seen within a week.</p>
+                        <p>At Kaysville Clinic, we offer Dye VL as a safe and effective option for all skin types to help improve clarity and skin tone.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Laser Hair Removal</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Laser hair removal with Harmony XL Pro SHR uses low fluence pulses at a high repetition rate to gradually heat hair follicles while minimizing damage to surrounding tissue.</p>
+                        <p>Benefits include long-lasting results, comfortable treatments, safety across skin types, quicker sessions, and no downtime.</p>
+                        <p>After treatment, mild redness and sensitivity may occur briefly. Avoid sun exposure, hot showers, and excessive sweating for a few days.</p>
+                        <p>Our team creates personalized treatment plans to help you achieve smooth, long-lasting hair reduction results.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Botox</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Botox, short for Botulinum toxin, is used cosmetically to reduce facial wrinkles and lines, and medically for conditions such as chronic migraines, excessive sweating, overactive bladder, and muscle stiffness.</p>
+                        <p>Botox works by blocking nerve signals to muscles, causing temporary relaxation that softens lines and can relieve selected medical symptoms.</p>
+                        <p>It is a minimally invasive treatment with quick recovery and results that typically appear within days.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Sclerotherapy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <p>Sclerotherapy is a minimally invasive procedure used to treat varicose veins and spider veins by injecting a sclerosant solution into affected veins.</p>
+                        <p>The treated vein collapses and is gradually absorbed by the body, reducing visible vein appearance and often improving discomfort.</p>
+                        <p>Sessions are typically quick, involve minimal downtime, and many patients see significant cosmetic and symptomatic improvement.</p>
+                    </div>
+
+                    <button class="subsection-toggle" aria-expanded="false">
+                        <h3>Aesthetics Verbatim Copy</h3>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="subsection-content" style="display:none;">
+                        <pre class="verbatim-copy">Now Introducing...
+AESTHETICS FOR ALL
+Laser treatments for women and men are becoming increasingly
+popular, with more and more men turning to aesthetic laser
+procedures to improve their appearance. Laser treatments for men
+include laser hair removal, laser skin resurfacing, and photofacial
+rejuvenation.
+
+ClearLift Laser Skin
+Rejuvenation
+
+Are you tired of fine lines, wrinkles, and other signs of aging on your skin?
+Do you wish there was a way to achieve younger-looking skin without
+undergoing surgery or extensive downtime? Look no further than ClearLift
+by Harmony XL Pro - the ultimate laser skin rejuvenation treatment
+available at Kaysville Clinic.
+
+What is ClearLift?
+ClearLift, also known as the "laser facelift", is a non-invasive and pain-free
+laser treatment that uses advanced technology to target signs of aging on
+the skin.
+
+Dye VL Laser Skin Treatment
+At Kaysville Clinic, we offer advanced laser skin treatment for pigmented
+lesions with Dye VL by Harmony XL Pro.
+
+Laser Hair Removal
+Are you tired of shaving, waxing, or tweezing unwanted body hair? Look no
+further! Kaysville Clinic offers the latest in laser hair removal technology.
+
+What is Laser Hair Removal?
+Laser hair removal is a cosmetic treatment that uses highly concentrated
+laser light to selectively target and destroy hair follicles. The Harmony XL
+Pro SHR device utilizes a special technology called Super Hair Removal
+(SHR) which delivers low fluence pulses at a high repetition rate, gradually
+heating the hair follicle while avoiding damage to surrounding tissue. This
+results in effective and painless hair removal.
+
+Why Choose Harmony XL Pro?
+Unlike traditional laser hair removal methods, the Harmony XL Pro SHR
+device is safe and effective for all skin types, including darker skin tones. It
+also has a built-in cooling mechanism to minimize discomfort during
+treatment. Additionally, the device has a large spot size, allowing for
+quicker treatment times and covering larger areas in less time.
+
+Botox
+Botox, short for Botulinum toxin, is a neurotoxic protein produced by the
+bacterium Clostridium botulinum.
+
+Sclerotherapy
+Varicose veins are a common medical condition that affects millions of
+people worldwide.
+Luckily, there are several treatment options available for varicose veins.
+One of the most effective and minimally invasive treatments is
+Sclerotherapy.</pre>
+                    </div>
+                </div>
+            </div>
+
+                    </div>
+    </section>
         </main>
 
         <footer class="site-footer">
@@ -126,15 +955,15 @@
         <li class="hours">
             <strong>Hours:</strong>
             <span>
-                Mondays 9am–5:30pm <br>
-                (closed for lunch 12pm–2pm)<br>
-                Tuesdays 9am–5:30pm <br>
-                (closed for lunch 12pm–1pm)<br>
-                Wednesdays 1pm–5:30pm <br>
-                Thursdays 9am–4:30pm <br>
-                (closed for lunch 12pm–2pm)<br>
-                Fridays 9am–4:30pm <br>
-                (closed for lunch 12pm–1pm)<br>
+                Mondays 9am-5:30pm <br>
+                (closed for lunch 12pm-2pm)<br>
+                Tuesdays 9am-5:30pm <br>
+                (closed for lunch 12pm-1pm)<br>
+                Wednesdays 1pm-5:30pm <br>
+                Thursdays 9am-4:30pm <br>
+                (closed for lunch 12pm-2pm)<br>
+                Fridays 9am-4:30pm <br>
+                (closed for lunch 12pm-1pm)<br>
                 Closed Saturdays and Sundays
             </span>
         </li>
@@ -152,3 +981,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
