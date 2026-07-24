@@ -85,8 +85,8 @@ p, li, a, button, input, textarea, select {
 .brand img {
     display: block;
     width: auto;
-    height: clamp(44px, 7vw, 92px);
-    max-width: min(280px, 34vw);
+    height: clamp(112px, 9vw, 180px);
+    max-width: min(540px, 52vw);
     object-fit: contain;
     flex: 0 0 auto;
 }
