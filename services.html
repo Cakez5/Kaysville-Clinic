@@ -37,145 +37,67 @@
 
         <main>
     <section class="panel services-hero">
-        <div class="tabs" role="tablist">
-            <button class="tab" type="button" role="tab" aria-selected="true" data-target="primary-care">
-                Primary Care
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="minor-surgery">
-                Minor Surgery
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="wellness">
-                Wellness & Prevention
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="weight-management">
-                Weight Management
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="hormone-therapy">
-                Hormone Therapy
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="addiction-management">
-                Addiction Management
-            </button>
-            <button class="tab" type="button" role="tab" aria-selected="false" data-target="aesthetics">
-                Aesthetics
-            </button>
-        </div>
+        <label class="tabs-dropdown-label" for="service-tabs-select">Choose a service topic</label>
+        <select class="tabs-dropdown" id="service-tabs-select" aria-label="Choose a service topic">
+            <option value="primary-care">Primary Care</option>
+            <option value="minor-surgery">Minor Surgery</option>
+            <option value="wellness">Wellness & Prevention</option>
+            <option value="weight-management">Weight Management</option>
+            <option value="hormone-therapy">Hormone Therapy</option>
+            <option value="addiction-management">Addiction Management</option>
+            <option value="aesthetics">Aesthetics</option>
+        </select>
 
-        <div class="tab-panels">
-            <div id="primary-care" class="tab-panel active">
-                <h1>Primary Care</h1>
+
+        <div class="service-cards-grid">
+            <a href="patient-education.html?tab=primary-care" class="service-card" data-tab="primary-care">
+                <h2>Primary Care</h2>
                 <p>Your trusted partner for ongoing health needs, annual exams, and personalized care.</p>
+                <p class="service-card-description">Acute illness treatment, chronic condition management, preventive care, and long-term wellness planning.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Comprehensive family medicine</h3>
-                    <p>We provide support for acute illness, chronic condition management, preventive care, and long-term wellness planning.</p>
-                    <ul class="service-list">
-                        <li>Acute illness treatment for colds, flu, sinus issues, ear infections, and more</li>
-                        <li>Chronic condition care for diabetes, blood pressure, asthma, and other long-term concerns</li>
-                        <li>Annual physicals, sports physicals, scout physicals, missionary physicals, and FAA exams</li>
-                        <li>Women’s health, men’s health, and mental health support</li>
-                        <li>Immunizations and routine screenings</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="minor-surgery" class="tab-panel">
-                <h1>Minor Surgery</h1>
+            <a href="patient-education.html?tab=minor-surgery" class="service-card" data-tab="minor-surgery">
+                <h2>Minor Surgery</h2>
                 <p>Comfortable, professional treatment for common minor procedures and outpatient care.</p>
+                <p class="service-card-description">Skin procedures, ingrown toenail treatment, laceration repair, and injury evaluation.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Procedures we perform</h3>
-                    <ul class="service-list">
-                        <li>Skin biopsies, mole removal, wart removal, cyst removal, and lipoma removal</li>
-                        <li>Ingrown toenail treatment including partial or full nail avulsion when needed</li>
-                        <li>Laceration repair and wound care with attention to scarring and healing</li>
-                        <li>Injury evaluation for strains, sprains, fractures, and other common concerns</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="wellness" class="tab-panel">
-                <h1>Wellness & Prevention</h1>
+            <a href="patient-education.html?tab=wellness" class="service-card" data-tab="wellness">
+                <h2>Wellness & Prevention</h2>
                 <p>Preventive screenings, lifestyle guidance, and proactive care to keep you healthy.</p>
+                <p class="service-card-description">Routine wellness visits, immunizations, physical exams, and health coaching.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Prevention-focused care</h3>
-                    <ul class="service-list">
-                        <li>Routine wellness visits and health coaching</li>
-                        <li>Tetanus and diphtheria immunizations</li>
-                        <li>Seasonal preventive care</li>
-                        <li>Screenings for women’s and men’s health concerns</li>
-                        <li>Education around diet, sleep, movement, and long-term healthy habits</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="weight-management" class="tab-panel">
-                <h1>Weight Management</h1>
+            <a href="patient-education.html?tab=weight-management" class="service-card" data-tab="weight-management">
+                <h2>Weight Management</h2>
                 <p>Supportive plans and guidance for healthy, sustainable weight goals.</p>
+                <p class="service-card-description">GLP-1 weight management programs with medical monitoring and lifestyle support.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Medication-assisted weight loss</h3>
-                    <p>We offer evidence-based GLP-1 programs with semaglutide and tirzepitide for patients who need medical support with weight loss and body composition goals.</p>
-                    <ul class="service-list">
-                        <li>Medical evaluation and individualized treatment plans</li>
-                        <li>Guidance on nutrition, sleep, exercise, and stress management</li>
-                        <li>Monitoring of progress, side effects, and long-term success</li>
-                        <li>Support for patients who want to lose weight and keep it off</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="hormone-therapy" class="tab-panel">
-                <h1>Hormone Therapy</h1>
+            <a href="patient-education.html?tab=hormone-therapy" class="service-card" data-tab="hormone-therapy">
+                <h2>Hormone Therapy</h2>
                 <p>Personalized hormone care to help support energy, balance, and overall wellness.</p>
+                <p class="service-card-description">Hormone replacement therapy and testosterone replacement with safety monitoring.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Hormone and testosterone replacement</h3>
-                    <p>We help patients address symptoms related to menopause, low testosterone, fatigue, low libido, and age-related hormone decline.</p>
-                    <ul class="service-list">
-                        <li>Hormone replacement therapy for menopause symptoms</li>
-                        <li>Testosterone replacement therapy for men experiencing fatigue, low energy, or reduced vitality</li>
-                        <li>Bioidentical and conventional hormone options</li>
-                        <li>Customized treatment plans with follow-up and safety monitoring</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="addiction-management" class="tab-panel">
-                <h1>Addiction Management</h1>
+            <a href="patient-education.html?tab=addiction-management" class="service-card" data-tab="addiction-management">
+                <h2>Addiction Management</h2>
                 <p>Compassionate support and treatment planning for recovery and long-term wellness.</p>
+                <p class="service-card-description">Medication-assisted treatment, therapy, counseling, and recovery planning.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
 
-                <div class="service-section">
-                    <h3>Recovery-focused care</h3>
-                    <ul class="service-list">
-                        <li>Medication-assisted treatment for opioid dependence</li>
-                        <li>Support for substance use disorders and alcoholism</li>
-                        <li>Therapy, counseling, and individualized recovery planning</li>
-                        <li>Compassionate care for patients navigating dependence and withdrawal symptoms</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="aesthetics" class="tab-panel">
-                <h1>Aesthetics</h1>
+            <a href="patient-education.html?tab=aesthetics" class="service-card" data-tab="aesthetics">
+                <h2>Aesthetics</h2>
                 <p>Skin-focused services designed to help you look and feel your best.</p>
-
-                <div class="service-section">
-                    <h3>Laser and skin rejuvenation</h3>
-                    <ul class="service-list">
-                        <li><strong>ClearLift by Harmony XL Pro</strong> for fine lines, wrinkles, sagging skin, tone, texture, pores, sun damage, acne scars, and skin tightening</li>
-                        <li><strong>Dye VL</strong> for pigmented lesions, sunspots, age spots, freckles, melasma, and birthmarks</li>
-                        <li><strong>Laser hair removal</strong> with Harmony XL Pro SHR for long-lasting, comfortable hair reduction</li>
-                        <li><strong>Botox</strong> for cosmetic smoothing as well as medical treatment of migraines, sweating, and muscle tension</li>
-                        <li><strong>Sclerotherapy</strong> for varicose and spider veins</li>
-                        <!-- <div class="service-image">
-                             <img src="assets/images/NewKaysville.jpg" alt="Dr. Layne Kamalu"> -->
-                        <!-- </div> -->
-                    </ul>
-                </div>
-            </div>
-            
+                <p class="service-card-description">ClearLift, Dye VL, laser hair removal, Botox, and sclerotherapy treatments.</p>
+                <span class="service-card-cta">Learn More →</span>
+            </a>
         </div>
     </section>
 </main>
